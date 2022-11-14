@@ -1,0 +1,7 @@
+{
+  "HOST" : "romainmunier.ovh",
+  "USERNAME" : "ludoapi",
+  "PASSWORD" : "2JOypQS87KSuJO5P8Y2trNh8tTR6VHvp",
+  "PORT" : "27030",
+  "DATABASE": "LUDOAPI_{INITIALES}"
+}

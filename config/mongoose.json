@@ -1,0 +1,7 @@
+{
+  "HOST" : "database",
+  "USERNAME" : "ludoapi",
+  "PASSWORD" : "2JOypQS87KSuJO5P8Y2trNh8tTR6VHvp",
+  "PORT" : "27017",
+  "DATABASE": "LUDOAPI"
+}

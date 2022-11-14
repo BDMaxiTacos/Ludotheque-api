@@ -1,0 +1,22 @@
+version: '3.2'
+
+services:
+  mongo:
+    container_name: 'MongoDB_LUDOTHEQUE'
+    image: mongo
+    restart: 'no'
+    ports:
+      - 27030:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: DeYDl3gNSlcSFP8Fwn0YEGnUTysmxDUL
+    volumes:
+      - /standalone/mongodb_ludotheque/db:/data/db
+    deploy:
+      resources:
+        limits:
+          cpus: '1.00'
+          memory: 4G
+        reservations:
+          cpus: '0.50'
+          memory: 3G

@@ -1,0 +1,3 @@
+# Dossiers inutiles
+node_modules/
+config/nodemailer.json

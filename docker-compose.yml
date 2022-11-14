@@ -1,0 +1,43 @@
+version: '3.2'
+services:
+  database:
+    container_name: LudothequeDB
+    image: mongo
+    restart: 'no'
+    ports:
+      - 27020:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: QFrhiAQbq0cdVjMw
+      MONGO_INITDB_DATABASE: LUDOAPI
+    volumes:
+      - mongodb_ludotheque:/data/db
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+    networks:
+      ludotheque:
+        aliases:
+          - database
+  api:
+    container_name: LudothequeAPI
+    depends_on:
+      - database
+    image: "node:16.11.1"
+    user: "root"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=dev
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/home/node/app
+    command: "bash start.sh"
+    networks:
+      ludotheque:
+        aliases:
+          - api
+volumes:
+  mongodb_ludotheque:
+
+networks:
+  ludotheque:
+    driver: bridge

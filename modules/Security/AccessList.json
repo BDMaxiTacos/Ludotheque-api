@@ -1,0 +1,6 @@
+{
+  "###/test/users/" : {
+    "roles" : ["ROLE_USER"],
+    "router" : "../../tests/class/UsersTest"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "HOST" : "",
+  "PORT" : 587,
+  "USERNAME" : "",
+  "PASSWORD" : "",
+
+  "SENDER_NAME" : "Ludothèque API 🎳",
+  "SENDER_MAIL" : "romain-munier@orange.fr",
+
+  "DEFAULT_SUBJECT" : "Nouveau message de Ludothèque API 🎳",
+  "DEFAULT_MESSAGE" : "Si vous voyez ce message, c'est que votre messagerie ne vous permet pas d'afficher un mail au format HTML. Merci de l'ouvrir à l'aide de votre navigateur afin de le visualiser ou de contacter le support technique"
+}
