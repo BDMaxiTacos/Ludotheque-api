@@ -5,7 +5,6 @@
 La base de données utilisée est une base `MongoDB`. Elle est accessible par le biais des informations suivantes :
 
 ```
-Adresse : romainmunier.ovh
 Port : 27030
 Base de données : LUDOAPI_{INITIALES}
 ```
